@@ -1,5 +1,8 @@
 package tests.selenide;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Step;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static testData.TestDataPractice.*;
@@ -7,6 +10,8 @@ import static testData.TestDataPractice.*;
 public class PracticeFormTest extends TestBase {
 
     @Test
+    @Description("Форма для заполнения и сохранения")
+    @DisplayName("Проверка заполнения и сохранения формы")
     void successfulTest() {
 
         practiceFormTestPage
